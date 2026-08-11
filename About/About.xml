@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModMetaData>
+    <name>Layers CA Patchs</name>
+    <author>Phantasiaphiliac1230</author>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <modIconPath IgnoreIfNoMatchingField="True"></modIconPath>
+    <modDependencies>
+        <li> 
+            <packageId>Yy.CapesandArmor</packageId> 
+            <displayName>Layers: Capes and Armor</displayName> 
+        </li> 
+    </modDependencies> 
+    <loadAfter> 
+        <li>sarg.alphamechs</li> 
+        <li>Yy.CapesandArmor</li>
+        <li>darjeeling.BattleCloak</li>
+    </loadAfter>
+    <packageId>Phantasiaphiliac.layersCApatch</packageId>
+    <description>
+        Compatibility patch for Various Mods and Layers: Capes &amp; Armor.
+    </description>
+</ModMetaData>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd" MayRequire="sarg.alphamechs">
+        <xpath>/Defs/ThingDef[defName="AM_MechCommanderHelm"]/apparel</xpath>
+        <value>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd" MayRequire="sarg.alphamechs">
+        <xpath>/Defs/ThingDef[defName="AM_MechBreakerHelm"]/apparel</xpath>
+        <value>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd" MayRequire="sarg.alphamechs">
+        <xpath>/Defs/ThingDef[defName="AM_MechCommanderSuit"]/apparel</xpath>
+        <value>
+            <layers>
+                <li>Cape</li>
+            </layers>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd" MayRequire="sarg.alphamechs">
+        <xpath>/Defs/ThingDef[defName="AM_MechBreakerArmor"]/apparel</xpath>
+        <value>
+            <layers>
+                <li>Cape</li>
+            </layers>
+        </value>
+    </Operation>
+
+    <!-- Royalty Equipment -->
+
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty, sarg.alphamechs">
+        <xpath>/Defs/ThingDef[defName="AM_Apparel_ArmorHelmetMechlordHelmet_Prestige"]/apparel</xpath>
+        <value>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty, sarg.alphamechs">
+        <xpath>/Defs/ThingDef[defName="AM_MechCommanderHelm_Prestige"]/apparel</xpath>
+        <value>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty, sarg.alphamechs">
+        <xpath>/Defs/ThingDef[defName="AM_PrestigeMechBreakerHelm"]/apparel</xpath>
+        <value>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty, sarg.alphamechs">
+        <xpath>/Defs/ThingDef[defName="AM_Apparel_MechlordSuit_Prestige"]/apparel</xpath>
+        <value>
+            <layers>
+                <li>Cape</li>
+            </layers>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty, sarg.alphamechs">
+        <xpath>/Defs/ThingDef[defName="AM_PrestigeMechCommanderSuit"]/apparel</xpath>
+        <value>
+            <layers>
+                <li>Cape</li>
+            </layers>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty, sarg.alphamechs">
+        <xpath>/Defs/ThingDef[defName="AM_PrestigeMechBreakerArmor"]/apparel</xpath>
+        <value>
+            <layers>
+                <li>Cape</li>
+            </layers>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace" MayRequire="darjeeling.BattleCloak">
+        <xpath>Defs/ThingDef[apparel/layers/li="Cloak_layer"]/apparel/layers</xpath>
+        <value>
+            <layers>
+                <li>Cape</li>
+                <li>Armor_Cape</li>
+            </layers>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove" MayRequire="darjeeling.BattleCloak">
+        <xpath>Defs/ApparelLayerDef[defName="Cloak_layer"]</xpath>
+    </Operation>
+</Patch>
