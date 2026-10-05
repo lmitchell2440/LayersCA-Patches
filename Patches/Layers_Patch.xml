@@ -1,108 +1,132 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
 
-    <Operation Class="PatchOperationAdd" MayRequire="sarg.alphamechs">
-        <xpath>/Defs/ThingDef[defName="AM_MechCommanderHelm"]/apparel</xpath>
-        <value>
-            <layers>
-                <li>Overhead</li>
-            </layers>
-        </value>
-    </Operation>
+            <!-- Alpha Mechs -->
+            <li Class="PatchOperationSequence" MayRequire="sarg.alphamechs">
+                <operations>
 
-    <Operation Class="PatchOperationAdd" MayRequire="sarg.alphamechs">
-        <xpath>/Defs/ThingDef[defName="AM_MechBreakerHelm"]/apparel</xpath>
-        <value>
-            <layers>
-                <li>Overhead</li>
-            </layers>
-        </value>
-    </Operation>
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="AM_MechCommanderHelm"]/apparel</xpath>
+                        <value>
+                            <layers>
+                                <li>Overhead</li>
+                            </layers>
+                        </value>
+                    </li>
 
-    <Operation Class="PatchOperationAdd" MayRequire="sarg.alphamechs">
-        <xpath>/Defs/ThingDef[defName="AM_MechCommanderSuit"]/apparel</xpath>
-        <value>
-            <layers>
-                <li>Cape</li>
-            </layers>
-        </value>
-    </Operation>
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="AM_MechBreakerHelm"]/apparel</xpath>
+                        <value>
+                            <layers>
+                                <li>Overhead</li>
+                            </layers>
+                        </value>
+                    </li>
 
-    <Operation Class="PatchOperationAdd" MayRequire="sarg.alphamechs">
-        <xpath>/Defs/ThingDef[defName="AM_MechBreakerArmor"]/apparel</xpath>
-        <value>
-            <layers>
-                <li>Cape</li>
-            </layers>
-        </value>
-    </Operation>
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="AM_MechCommanderSuit"]/apparel</xpath>
+                        <value>
+                            <layers>
+                                <li>Cape</li>
+                            </layers>
+                        </value>
+                    </li>
 
-    <!-- Royalty Equipment -->
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="AM_MechBreakerArmor"]/apparel</xpath>
+                        <value>
+                            <layers>
+                                <li>Cape</li>
+                            </layers>
+                        </value>
+                    </li>
 
-    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty, sarg.alphamechs">
-        <xpath>/Defs/ThingDef[defName="AM_Apparel_ArmorHelmetMechlordHelmet_Prestige"]/apparel</xpath>
-        <value>
-            <layers>
-                <li>Overhead</li>
-            </layers>
-        </value>
-    </Operation>
+                </operations>
+            </li>
 
-    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty, sarg.alphamechs">
-        <xpath>/Defs/ThingDef[defName="AM_MechCommanderHelm_Prestige"]/apparel</xpath>
-        <value>
-            <layers>
-                <li>Overhead</li>
-            </layers>
-        </value>
-    </Operation>
+            <!-- Alpha Mechs: Royalty Equipment -->
+            <li Class="PatchOperationSequence" MayRequire="Ludeon.RimWorld.Royalty,sarg.alphamechs">
+                <operations>
 
-    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty, sarg.alphamechs">
-        <xpath>/Defs/ThingDef[defName="AM_PrestigeMechBreakerHelm"]/apparel</xpath>
-        <value>
-            <layers>
-                <li>Overhead</li>
-            </layers>
-        </value>
-    </Operation>
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="AM_Apparel_ArmorHelmetMechlordHelmet_Prestige"]/apparel</xpath>
+                        <value>
+                            <layers>
+                                <li>Overhead</li>
+                            </layers>
+                        </value>
+                    </li>
 
-    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty, sarg.alphamechs">
-        <xpath>/Defs/ThingDef[defName="AM_Apparel_MechlordSuit_Prestige"]/apparel</xpath>
-        <value>
-            <layers>
-                <li>Cape</li>
-            </layers>
-        </value>
-    </Operation>
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="AM_MechCommanderHelm_Prestige"]/apparel</xpath>
+                        <value>
+                            <layers>
+                                <li>Overhead</li>
+                            </layers>
+                        </value>
+                    </li>
 
-    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty, sarg.alphamechs">
-        <xpath>/Defs/ThingDef[defName="AM_PrestigeMechCommanderSuit"]/apparel</xpath>
-        <value>
-            <layers>
-                <li>Cape</li>
-            </layers>
-        </value>
-    </Operation>
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="AM_PrestigeMechBreakerHelm"]/apparel</xpath>
+                        <value>
+                            <layers>
+                                <li>Overhead</li>
+                            </layers>
+                        </value>
+                    </li>
 
-    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty, sarg.alphamechs">
-        <xpath>/Defs/ThingDef[defName="AM_PrestigeMechBreakerArmor"]/apparel</xpath>
-        <value>
-            <layers>
-                <li>Cape</li>
-            </layers>
-        </value>
-    </Operation>
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="AM_Apparel_MechlordSuit_Prestige"]/apparel</xpath>
+                        <value>
+                            <layers>
+                                <li>Cape</li>
+                            </layers>
+                        </value>
+                    </li>
 
-    <Operation Class="PatchOperationReplace" MayRequire="darjeeling.BattleCloak">
-        <xpath>Defs/ThingDef[apparel/layers/li="Cloak_layer"]/apparel/layers</xpath>
-        <value>
-            <layers>
-                <li>Armor_Cape</li>
-            </layers>
-        </value>
-    </Operation>
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="AM_PrestigeMechCommanderSuit"]/apparel</xpath>
+                        <value>
+                            <layers>
+                                <li>Cape</li>
+                            </layers>
+                        </value>
+                    </li>
 
-    <Operation Class="PatchOperationRemove" MayRequire="darjeeling.BattleCloak">
-        <xpath>Defs/ApparelLayerDef[defName="Cloak_layer"]</xpath>
+                    <li Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="AM_PrestigeMechBreakerArmor"]/apparel</xpath>
+                        <value>
+                            <layers>
+                                <li>Cape</li>
+                            </layers>
+                        </value>
+                    </li>
+
+                </operations>
+            </li>
+
+            <!-- Battle Cloak -->
+            <li Class="PatchOperationSequence" MayRequire="darjeeling.BattleCloak">
+                <operations>
+
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[apparel/layers/li="Cloak_layer"]/apparel/layers</xpath>
+                        <value>
+                            <layers>
+                                <li>Armor_Cape</li>
+                            </layers>
+                        </value>
+                    </li>
+
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ApparelLayerDef[defName="Cloak_layer"]</xpath>
+                    </li>
+
+                </operations>
+            </li>
+
+        </operations>
     </Operation>
 </Patch>
